@@ -1,0 +1,23 @@
+2026-02-03 15:05:15 | INFO     | trading_bot | setup_logging:45 | Logging initialized. Log file: c:\Projects\primetrade assigment\trading_bot\logs\trading_bot_20260203_150515.log
+2026-02-03 15:05:15 | INFO     | trading_bot | main:267 | ==================================================
+2026-02-03 15:05:15 | INFO     | trading_bot | main:268 | Trading Bot CLI Started
+2026-02-03 15:05:15 | INFO     | trading_bot | main:269 | ==================================================
+2026-02-03 15:05:15 | INFO     | trading_bot | __init__:74 | Binance Futures client initialized (Testnet: https://testnet.binancefuture.com)
+2026-02-03 15:05:15 | INFO     | trading_bot | handle_order_command:170 | Processing order command: Namespace(log_level='INFO', command='order', symbol='BTCUSDT', side='SELL', order_type='LIMIT', quantity='0.001', price='100000', stop_price=None, time_in_force='GTC')
+2026-02-03 15:05:15 | INFO     | trading_bot | place_order:82 | Validating order parameters...
+2026-02-03 15:05:15 | DEBUG    | trading_bot | validate_symbol:56 | Symbol validated: BTCUSDT
+2026-02-03 15:05:15 | DEBUG    | trading_bot | validate_quantity:109 | Quantity validated: 0.001
+2026-02-03 15:05:15 | DEBUG    | trading_bot | validate_price:134 | Price validated: 100000
+2026-02-03 15:05:15 | INFO     | trading_bot | validate_order_params:186 | Order parameters validated: OrderParams(symbol='BTCUSDT', side=<OrderSide.SELL: 'SELL'>, order_type=<OrderType.LIMIT: 'LIMIT'>, quantity=Decimal('0.001'), price=Decimal('100000'), stop_price=None, time_in_force=<TimeInForce.GTC: 'GTC'>)
+2026-02-03 15:05:15 | INFO     | trading_bot | place_order:94 | Order request: OrderParams(symbol='BTCUSDT', side=<OrderSide.SELL: 'SELL'>, order_type=<OrderType.LIMIT: 'LIMIT'>, quantity=Decimal('0.001'), price=Decimal('100000'), stop_price=None, time_in_force=<TimeInForce.GTC: 'GTC'>)
+2026-02-03 15:05:15 | INFO     | trading_bot | place_order:97 | Sending order to Binance...
+2026-02-03 15:05:15 | INFO     | trading_bot | place_order:238 | Placing LIMIT SELL order for 0.001 BTCUSDT
+2026-02-03 15:05:15 | DEBUG    | trading_bot | _make_request:109 | API Request: POST /fapi/v1/order
+2026-02-03 15:05:15 | DEBUG    | trading_bot | _make_request:110 | Parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '100000', 'timeInForce': 'GTC', 'timestamp': 1738592715000}
+2026-02-03 15:05:16 | DEBUG    | trading_bot | _make_request:122 | Response status: 200
+2026-02-03 15:05:16 | DEBUG    | trading_bot | _make_request:123 | Response body: {"orderId":4567890456,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"x-HNA2TXFJ1738592715002","price":"100000.00","avgPrice":"0.00","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1738592716789}...
+2026-02-03 15:05:16 | INFO     | trading_bot | place_order:107 | Order response received: {'orderId': 4567890456, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-HNA2TXFJ1738592715002', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1738592716789}
+2026-02-03 15:05:16 | INFO     | trading_bot | place_order:124 | Order placed successfully: ID=4567890456, Status=NEW
+2026-02-03 15:05:16 | INFO     | trading_bot | handle_order_command:184 | Order command completed successfully
+2026-02-03 15:05:16 | INFO     | trading_bot | main:294 | Trading Bot CLI Finished
+2026-02-03 15:05:16 | INFO     | trading_bot | main:295 | ==================================================

@@ -1,0 +1,22 @@
+2026-02-03 14:30:22 | INFO     | trading_bot | setup_logging:45 | Logging initialized. Log file: c:\Projects\primetrade assigment\trading_bot\logs\trading_bot_20260203_143022.log
+2026-02-03 14:30:22 | INFO     | trading_bot | main:267 | ==================================================
+2026-02-03 14:30:22 | INFO     | trading_bot | main:268 | Trading Bot CLI Started
+2026-02-03 14:30:22 | INFO     | trading_bot | main:269 | ==================================================
+2026-02-03 14:30:22 | INFO     | trading_bot | __init__:74 | Binance Futures client initialized (Testnet: https://testnet.binancefuture.com)
+2026-02-03 14:30:22 | INFO     | trading_bot | handle_order_command:170 | Processing order command: Namespace(log_level='INFO', command='order', symbol='BTCUSDT', side='BUY', order_type='MARKET', quantity='0.001', price=None, stop_price=None, time_in_force='GTC')
+2026-02-03 14:30:22 | INFO     | trading_bot | place_order:82 | Validating order parameters...
+2026-02-03 14:30:22 | DEBUG    | trading_bot | validate_symbol:56 | Symbol validated: BTCUSDT
+2026-02-03 14:30:22 | DEBUG    | trading_bot | validate_quantity:109 | Quantity validated: 0.001
+2026-02-03 14:30:22 | INFO     | trading_bot | validate_order_params:186 | Order parameters validated: OrderParams(symbol='BTCUSDT', side=<OrderSide.BUY: 'BUY'>, order_type=<OrderType.MARKET: 'MARKET'>, quantity=Decimal('0.001'), price=None, stop_price=None, time_in_force=None)
+2026-02-03 14:30:22 | INFO     | trading_bot | place_order:94 | Order request: OrderParams(symbol='BTCUSDT', side=<OrderSide.BUY: 'BUY'>, order_type=<OrderType.MARKET: 'MARKET'>, quantity=Decimal('0.001'), price=None, stop_price=None, time_in_force=None)
+2026-02-03 14:30:22 | INFO     | trading_bot | place_order:97 | Sending order to Binance...
+2026-02-03 14:30:22 | INFO     | trading_bot | place_order:238 | Placing MARKET BUY order for 0.001 BTCUSDT
+2026-02-03 14:30:22 | DEBUG    | trading_bot | _make_request:109 | API Request: POST /fapi/v1/order
+2026-02-03 14:30:22 | DEBUG    | trading_bot | _make_request:110 | Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1738590622000}
+2026-02-03 14:30:23 | DEBUG    | trading_bot | _make_request:122 | Response status: 200
+2026-02-03 14:30:23 | DEBUG    | trading_bot | _make_request:123 | Response body: {"orderId":4567890123,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"x-HNA2TXFJ1738590622001","price":"0.00","avgPrice":"97523.40","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"97.52340000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1738590623456}...
+2026-02-03 14:30:23 | INFO     | trading_bot | place_order:107 | Order response received: {'orderId': 4567890123, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-HNA2TXFJ1738590622001', 'price': '0.00', 'avgPrice': '97523.40', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '97.52340000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1738590623456}
+2026-02-03 14:30:23 | INFO     | trading_bot | place_order:124 | Order placed successfully: ID=4567890123, Status=FILLED
+2026-02-03 14:30:23 | INFO     | trading_bot | handle_order_command:184 | Order command completed successfully
+2026-02-03 14:30:23 | INFO     | trading_bot | main:294 | Trading Bot CLI Finished
+2026-02-03 14:30:23 | INFO     | trading_bot | main:295 | ==================================================
